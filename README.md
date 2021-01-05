@@ -6,7 +6,7 @@ In this challenge, I will build a web application that scrapes various websites 
 
 Initial scraping will be done using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
-A Jupyter Notebook file called [mission_to_mars.ipynb](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/mission_to_mars.ipynb) and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
+A Jupyter Notebook file called [mission_to_mars.ipynb](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/mission_to_mars.ipynb) and use this to complete all of your scraping and analysis tasks. The following outlines what you need to scrape.
 
 
 ### NASA Mars News
@@ -46,17 +46,17 @@ A Jupyter Notebook file called [mission_to_mars.ipynb](https://github.com/cecile
 ## 2.  MongoDB and Flask Application
 
 * Use MongoDB with Flask template to create a new HTML page that displays all of the information that was scraped from the URLs above.
-* The [Jupyter notebook](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/mission_to_mars.ipynb) into a Python script called [scrape_mars.py](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/scrape_mars.py) with a function called scrape that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
-* Create a file [app.py](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/app.py)
+* Export the [Jupyter notebook](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/mission_to_mars.ipynb) into a Python script called [scrape_mars.py](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/scrape_mars.py) with a function called scrape that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
+* Create a file [app.py](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/app.py)
 * Next, create a route called "/scrape" that will import your scrape_mars.py script and call your scrape function.
 * Store the return value in Mongo as a Python dictionary.
 * Create a root route "/" that will query your Mongo database and pass the mars data into an HTML template to display the data.
-* Create a template HTML file called [index.html](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/templates/index.html) that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
+* Create a template HTML file called [index.html](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/templates/index.html) that will take the mars data dictionary and display all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
 * The final output should be as follows:
 
-![Image](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%201.png)
+![Image](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%201.png)
 <p align="center">
-  <img src="https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%202.png">
+  <img src="https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%202.png">
 </p>
 
 ## Folders and Directories
@@ -65,9 +65,9 @@ The below folders have the following files:
 
 | Folder Name    | File Name |
 | ------------- | ------------- |
-|Unit 12 - Mission To Mars         | [app.py](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/app.py)|
-|                                  | [mission_to_mars.ipynb](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/mission_to_mars.ipynb)|
-|                                  | [scrape_mars.py](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/scrape_mars.py)|
+|Unit 12 - Mission To Mars         | [app.py](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/app.py)|
+|                                  | [mission_to_mars.ipynb](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/mission_to_mars.ipynb)|
+|                                  | [scrape_mars.py](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/scrape_mars.py)|
 
 
 
@@ -75,7 +75,7 @@ Inside the Web Challenge Folder, there are the Assets, Resources, and Visualizat
 
 | Folder Name    | File Name |
 | ------------- | ------------- |
-| Images        | [Mars_DB - Mongo.png](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/Images/Mars_DB%20-%20Mongo.png)|
-|               | [Mission to Mars HTML 1.png](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%201.png)|
-|               | [Mission to Mars HTML 2.png](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%202.png)|
-| templates   | [index.html](https://github.com/cecileung1208/Homework/blob/master/Unit%2012%20-%20Web%20Scraping%20Challenge/Mission%20to%20Mars/templates/index.html)|
+| Images        | [Mars_DB - Mongo.png](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/Images/Mars_DB%20-%20Mongo.png)|
+|               | [Mission to Mars HTML 1.png](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%201.png)|
+|               | [Mission to Mars HTML 2.png](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/Images/Mission%20to%20Mars%20HTML%202.png)|
+| templates   | [index.html](https://github.com/cecileung1208/Web-Scraping-Mission-to-Mars/blob/master/Mission%20to%20Mars/templates/index.html)|
